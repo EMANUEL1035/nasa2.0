@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="robots" content="index,follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Planets</title>
+        <link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="../estilos/style_principal.css">
+        <link rel="stylesheet" href="../estilos/mobile.css" media="screen and (max-width: 600px)">
+        <link rel="stylesheet" href="../estilos/tamaño_3.css" media="screen and (max-width: 710px)">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Borel&family=Handjet:wght@200&display=swap" rel="stylesheet">
+        <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+    </head>
+    <body class="fondo_1">
+        <header class="header">
+            <figure class="header_logo">
+                <a href="https://www.nasa.gov/" target="_blank"><img src="../imagenes/NASA-Logo-PNG-Image.png" alt="Logo"></a>
+            </figure> 
+                <div class="header_atajos" id="_atajos">
+                    <li class="header_lista_atajos"><a href="../html/index.html" target="_blank"> <i class="fas fa-user-astronaut"></i> Inicio </a></li>
+                    <li class="header_lista_atajos"><a href="#"> <i class="fas fa-globe-americas"></i> Planetas </a></li>
+                    <li class="header_lista_atajos"><a href="../html/missions.html" target="_blank"> <i class="fas fa-space-shuttle"></i> Misiones  </a></li>
+                </div>
+                <div class="nav_toggle" id="_toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <script src="../codigo/codigo.js"></script>
+        </header>
+        
+        <div class="body_planets"> 
+            <img class='object'        src="../imagenes/sun.png"     alt="SUN"      id='sun'>
+            <img class='object planet' src="../imagenes/Mercury.png" alt="MERCURY"  id='mercury'>
+            <img class='object planet' src="../imagenes/venus.png"   alt="VENUS"    id='venus'>
+            <img class='object planet' src="../imagenes/Earth.png"   alt="EARTH"    id=earth>
+            <img class='object planet' src="../imagenes/Mars.png"    alt="MARS"     id='mars'>
+            <img class='object planet' src="../imagenes/Jupiter.png" alt="JUPITER"  id='jupiter'>
+            <img class='object planet' src="../imagenes/saturno.png" alt="SATURNO"  id='saturn'>
+            <img class='object planet' src="../imagenes/uranus.png"  alt="URANUS"   id='uranus'>
+            <img class='object planet' src="../imagenes/Neptune.png" alt="NEPTUNE"  id='neptune'>
+            <div class='object'                                                     id="moon" ></div>
+
+            <div class='object p-orbit'></div>
+            <div class='object p-orbit'></div>
+            <div class='object p-orbit'></div>
+            <div class='object p-orbit'></div>
+            <div class='object p-orbit'></div>
+            <div class='object p-orbit'></div>
+            <div class='object p-orbit'></div>
+            <div class='object p-orbit'></div>
+            <div class='object' id="m-orbit"></div>  
+
+            <img src="../imagenes/asteroide.png" alt="ASTEROIDE" class="object" id="belt">
+            <script src='../codigo/script.js'></script>
+        </div>
+
+        <main class="container__cards">
+            <div class="card">
+                <div class="cover">
+                    <img src="../imagenes/sol_rot.gif" alt="SUN">
+                    <div class="img__back"></div>
+                </div>
+                <div class="description_2">
+                    <h2>SOL</h2>
+                    <p>El Sol es la estrella en el centro del sistema solar cuya fuerza gravitacional mantiene en órbita a los planetas. </p>
+                    <span class="hide" id="hideText_1_1">
+                        <p>Tiene alrededor de 4500 millones de años. Produce su propia luz y calor por el proceso de fusión nuclear.</p>
+                        <p>El Sol se mueve a 210 km/s dentro de la Vía Láctea y tarda 225 millones de años en completar una vuelta alrededor del centro de la galaxia.</p>
+                        <p>El diámetro del Sol es de 1,4 millones de km. Sus principales componentes son el hidrógeno (92%), el helio (7,8 %) y el resto son elementos más pesados como el oxígeno, carbono, nitrógeno y neón.</p>
+                    </span>
+                    <button id="btn_abrir_solar_1">Leer mas</button>
+                    
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="cover">
+                    <img src="../imagenes/com--unscreen.gif" alt="MERCURY">
+                    <div class="img__back"></div>
+                </div>
+                <div class="description_2">
+                    <h2>MERCURIO</h2>
+                    <p>Mercurio es el planeta más cercano al Sol, Mercurio es uno de los planetas más densos del sistema solar.</p>
+                    <span class="hide" id="hideText_1_2">
+                        <p>El más pequeño de los planetas internos. Se sabe de la existencia de Mercurio desde el siglo III a.d.C.</p>
+                        <p>En la mitología romana, Mercurio era el dios del comercio y los viajes, por eso se le dió este nombre al planeta, por su movimiento rápido a través del cielo.</p>
+                        <p>Compuesto principalmente por hierro, sodio, magnesio, calcio, oxígeno y helio. La superficie de Mercurio presenta muchos cráteres y llanuras lisas producto del flujo de lava.</p>
+                    </span>
+                    <button id="btn_abrir_solar_2">Leer mas</button>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="cover">
+                    <img src="../imagenes/Venus-Rotation-Movie-unscreen.gif" alt="VENUS">
+                    <div class="img__back"></div>
+                </div>
+                <div class="description_2">
+                    <h2>VENUS</h2>
+                    <p>Venus es el segundo planeta desde el Sol. Se le considera la hermana del planeta Tierra por su similitud en tamaño y masa.</p>
+                    <span class="hide" id="hideText_1_3">
+                        <p>Su atmósfera está compuesta por gases tóxicos (90-95% dióxido de carbono) y temperaturas superiores a los 450ºC.</p>
+                        <p>Su nombre se debe a la diosa del amor y la belleza. Un detalle curioso de Venus es que rota en sentido opuesto al resto de los planetas internos, lo que le hace aparecer con los polos invertidos.</p>
+                        <p>Venus es un planeta rocoso y el tercero en densidad, debido a su núcleo de níquel y hierro. Probablemente poseía una gran cantidad de agua que se evaporó debido a las altas temperaturas.</p>
+                    </span>
+                    <button id="btn_abrir_solar_3">Leer mas</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="cover">
+                    <img src="../imagenes/Rotating_earth_animated_transparent.gif" alt="EARTH">
+                    <div class="img__back"></div>
+                </div>
+                <div class="description_2">
+                    <h2>TIERRA</h2>
+                    <p>La Tierra es el tercer planeta desde el Sol. Es el quinto más grande en tamaño en el sistema solar. </p>
+                    <span class="hide" id="hideText_1_4">
+                        <p>La Tierra se formó a partir de una masa caliente y fundida que luego se enfrió y solidificó.</p>
+                        <p>La Tierra es el único planeta cuyo nombre no tiene origen en la mitología griega o romana y que contiene agua en estado líquido. Posee un satélite natural, la Luna.</p>
+                        <p>La Tierra es el planeta más denso del sistema solar. La superficie está recubierta en su mayoría por los océanos (70%). La atmósfera está compuesta por 78% de nitrógeno, 21% de oxígeno y el resto por argón, dióxido de carbono, metano y otros gases.</p>
+                    </span>
+                    <button id="btn_abrir_solar_4">Leer mas</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="cover">
+                    <img src="../imagenes/rotacion--luna.gif" alt="MOON">
+                    <div class="img__back"></div>
+                </div>
+                <div class="description_2">
+                    <h2>LUNA</h2>
+                    <p>Aunque no es un planeta es un satélite muy importante y amado por nosotros este siempre esta acompañando a la tierra.</p>
+                    <span class="hide" id="hideText_1_5">                    
+                        <p>En 1969 el primer cohete que logró alunizar y regresar a la Tierra fue el Apolo 11 en el que viajó una tripulación comandada por Neil Armstrong, el primer astronauta en pisar la Luna. Un cohete puede tardar tres días desde que sale de la Tierra hasta que llega a la Luna.</p>
+                        <p>En total han viajado veinticuatro humanos y, doce de ellos, han caminado sobre la superficie lunar.</p>
+                        <p>Contiene minerales, como magnesio, silicio, hierro y calcio, oxígeno y rocas basálticas.</p>
+                    </span>
+                    <button id="btn_abrir_solar_5">Leer mas</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="cover">
+                    <img src="../imagenes/mars.gif" alt="MARS">
+                    <div class="img__back"></div>
+                </div>
+                <div class="description_2">
+                    <h2>MARTE</h2>
+                    <p>Marte es el cuarto planeta desde el Sol. Desde la Tierra se puede observar a Marte que luce rojo por la gran cantidad de polvo.</p>
+                    <span class="hide" id="hideText_1_6">
+                        <p>Marte recibe su nombre por el dios romano de la guerra. Sus dos satélites son llamados Fobos (miedo) y Deimos (pánico) como los hijos del dios griego de la guerra.</p>
+                        <p>La superficie esta marcada por cráteres y fisuras, como el cañón Valles Marineris, con 8 km de profundidad y 4500 km de largo. El suelo es rico en hierro y en compuestos inestables llamados peróxidos. La atmósfera está compuesta por 95% de dióxido de carbono, 3% nitrógeno, 2% argón y menos de 0,2% oxígeno.</p>
+                        <p></p>
+                    </span>
+                    <button id="btn_abrir_solar_6">Leer mas</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="cover">
+                    <img src="../imagenes/7fbB-unscreen.gif" alt="JUPITER">
+                    <div class="img__back"></div>
+                </div>
+                <div class="description_2">
+                    <h2>JÚPITER</h2>
+                    <p>Júpiter es el primero de los planetas gaseosos y el quinto desde el Sol. Es el más grande de los planetas del sistema solar.</p>
+                    <span class="hide" id="hideText_1_7">
+                        <p>Para los antiguos romanos, Júpiter era el rey de los dioses. La capa externa gaseosa es de aproximadamente 20 mil km de espesor compuesta de helio (10%) e hidrógeno (90%). En el interior del planeta, la enorme presión transforma el hidrógeno a su estado líquido metálico.</p>
+                        <p>Júpiter posee al menos 63 satélites, cuatro de ellos descubiertas por Galileo en 1610, posee un sistema de anillos, como los de Saturno, pero más difuminados y claros, por lo que no son muy apreciables.</p>
+                        <p></p>
+                    </span>
+                    <button id="btn_abrir_solar_7">Leer mas</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="cover">
+                    <img src="../imagenes/giphy.gif" alt="SATURNO">
+                    <div class="img__back"></div>
+                </div>
+                <div class="description_2">
+                    <h2>SATURNO</h2>
+                    <p>Saturno es el sexto planeta desde el Sol.  Su característica más distintiva es el sistema de anillos que lo circunda.</p>
+                    <span class="hide" id="hideText_1_8">
+                        <p>Para los antiguos romanos, Saturno era el dios de la agricultura. En 1659, Christiaan Huygens reportó la presencia de los anillos y de un satélite, Titan. Titan posee una atmósfera espesa y hielo en su superficie y es más grande que el planeta Mercurio.</p>
+                        <p>En total tiene 7 anillos: A, B, C, D, E, F y G. Saturno está compuesto por 75% hidrógeno y 25% helio, con mínimas cantidades de agua, metano y amonio. Sobre el polo norte se distingue una formación hexagonal </p>
+                        <p></p>
+                    </span>
+                    <button id="btn_abrir_solar_8">Leer mas</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="cover">
+                    <img src="../imagenes/149q-unscreen.gif" alt="URANUS">
+                    <div class="img__back"></div>
+                </div>
+                <div class="description_2">
+                    <h2>URANO</h2>
+                    <p>Urano es el tercero de los planetas gaseosos y el séptimo desde el Sol.Es un planeta helado, azul pálido.</p>
+                    <span class="hide" id="hideText_1_9">
+                        <p>Urano es el dios griego del Universo, padre del dios Saturno. Mucho de lo que conocemos de Urano es gracias a la sonda Voyager 2.</p>
+                        <p>Fue descubierto por el astrónomo William Herschel en 1781. Posee un sistema de anillos difuso y por lo menos 27 satélites, de los cuales las más grandes son a Miranda, Ariel, Umbriel, Titania, Oberon, Portia, Puck y Sycorax.</p>
+                        <p>A diferencia de Júpiter y Saturno, Urano está compuesto de metano, amoníaco, agua, hidrógeno y helio.</p>                        
+                    </span>
+                    <button id="btn_abrir_solar_9">Leer mas</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="cover">
+                    <img src="../imagenes/neptuno-rot.gif" alt="NEPTUNE">
+                    <div class="img__back"> </div>
+                </div>
+                <div class="description_2">
+                    <h2>NEPTUNO</h2>
+                    <p>Es el octavo y último planeta del sistema solar. Es el más pequeño de los planetas gaseosos, de color azul y nubes blancas. </p>
+                    <span class="hide" id="hideText_1_10">
+                        <p>En la mitología romana Neptuno era el dios de los mares. La existencia de un octavo planeta fue predicho por Urbain Leverrier en Francia y John Adams en Inglaterra en 1846.</p>
+                        <p>El interior de Neptuno contiene un núcleo pequeño y denso compuesto de hierro, níquel y silicatos, rodeado por un manto de agua, amoníaco y metano. La capa externa contiene hidrógeno, helio y metano. La actividad atmosférica de Neptuno es alta, con vientos que pueden alcanzar los 2000 km/h.</p>
+                        <p></p>
+                    </span>
+                    <button id="btn_abrir_solar_10">Leer mas</button>
+                </div>
+            </div>
+            <script src="../codigo/codigo_planetas.js"></script>
+        </main>
+
+        <footer class="footer">
+            <span class="footer_texto">Redes Sociales <i class="fas fa-arrow-right"></i> </span> 
+            <ul class="footer_redes_sociales">
+                <li class="footer_lista_redes_sociales"><a href="https://www.facebook.com/NASA/?locale=es_LA" target="_blank"><img src="https://www.pngmart.com/files/15/Circle-Facebook-Logo-PNG-Picture.png"alt="Facebook"></a></li>
+                <li class="footer_lista_redes_sociales"><a href="https://www.instagram.com/nasa/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/87/87390.png"alt="Instagram"></a></li>
+            </ul>   
+        </footer>
+    </body>
+</html>
